@@ -4,6 +4,10 @@ import motokoLogo from './assets/motoko_moving.png';
 import motokoShadowLogo from './assets/motoko_shadow.png';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
+import About from './pages/about';
+import Marketplace from './pages/marketplace';
+import Profile from './pages/profile';
+import Dashboard from './pages/dashboard';
 
 function App() {
   const { data: count, refetch } = useQueryCall({
@@ -47,9 +51,7 @@ function App() {
           Edit <code>backend/Backend.mo</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite, React, and Motoko logos to learn more
-      </p>
+      <p className="read-the-docs">Hello</p>
     </div>
   );
 }

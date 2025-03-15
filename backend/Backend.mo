@@ -15,4 +15,20 @@ actor class Backend() {
   public func add(n : Nat) : async () {
     counter += n;
   };
+
+  // Reset the count to zero
+  public func reset() : async () {
+    counter := 0;
+  };
+
+  // Get the current count and reset it to zero
+  public func getAndReset() : async Nat {
+    let c = counter;
+    counter := 0;
+    c;
+  };
+
+
+  
+
 };
