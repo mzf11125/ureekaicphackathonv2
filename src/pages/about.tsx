@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+
 
 const About: React.FC = () => {
   return (
